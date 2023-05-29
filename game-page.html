@@ -18,6 +18,26 @@
     <title>WizQuiz</title>
 </head>
 <body>
+    <section id="main-game-section">
+        <header>
+            <h1 class="logo" id="game-logo">WizQuiz</h1>
+            <button>Quit</button>
+        </header>
+        <div id="quiz-option">
+            <h3>Choose a quiz?</h3>
+            <button data-type="animals" class="choice-button">Animals</button>
+            <button data-type="cars" class="choice-button">Cars</button>
+        </div>
+        <div class="info-box">
+            <h4>Question</h4>
+            <span id="question"></span>
+        </div>
+        <div class="info-box">
+            <h4>Type your answer here:</h4>
+            <input type="text" id="answer-box">
+        </div>
+        <button data-type="submit" id="submit-button">Submit Answer</button>
+    </section>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
