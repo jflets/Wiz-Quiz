@@ -1,0 +1,2 @@
+# Wiz-Quiz
+Quiz game.
