@@ -21,16 +21,16 @@
     <section id="main-game-section">
         <header>
             <h1 class="logo" id="game-logo">WizQuiz</h1>
-            <button id="close-button">Quit</button>
+            <button data-modal-target="#modal" id="quit-button">Quit</button>
             <!--popup modal-->
             <div class="modal" id="modal">
                 <div class="modal-hearder">
-                    <div class="title">Quitting?</div>
+                    <div class="title" id="close-button">Quitting?</div>
                 </div>
                 <div class="modal-body">
                     <p>Are you sure you want to quit?</p>
                     <a href="index.html" class="modal-button" id="yes-modal-button">YES</a>
-                    <button class="modal-button">NO</button>
+                    <button data-close-button class="modal-button" id="">NO</button>
                 </div>
             </div>
             <div id="overlay"></div>
