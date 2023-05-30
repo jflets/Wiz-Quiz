@@ -16,6 +16,18 @@ html {
   body {
     font-family: anton, sans-serif;
   }
+  /* home page */
+.logo {
+    padding: 5px;
+}
+
+#welcome-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* modal */
   .modal {
     position: fixed;
