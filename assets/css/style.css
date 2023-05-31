@@ -15,17 +15,96 @@ html {
   
   body {
     font-family: anton, sans-serif;
+    background-color: #0c3969;
   }
   /* home page */
-.logo {
-    padding: 5px;
-}
-
-#welcome-text {
+#main-section {
+    width: 100%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+#main-wrapper {
+    width: 90%;
+    height: 35em;
+    max-height: 40em;
+    padding-top: 10em;
+    padding-bottom: 1em;
+    background-color: #fffcfa;
+    border-radius: 1em;
+}
+
+.logo {
+    font-size: 40px;
+    padding: 5px 0 5px 20px;
+    -webkit-text-fill-color: #fffcfa;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+#welcome-text {
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0 1em 0;
+}
+
+#main-text {
+    margin: 1em 0 2em 0;
+}
+
+#main-text p {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-button {
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-button a {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 0.2em;
+    color: black;
+}
+
+#start-button a:hover {
+    background-color: #a1deff;
+}
+
+
+footer {
+    max-height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+footer a {
+    font-size: 40px;
+    color: #fffcfa;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+footer a:hover {
+    color: #a1deff;
+}
+
 
 
 /* modal */
