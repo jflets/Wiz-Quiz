@@ -22,42 +22,46 @@
         <header>
             <h1 class="logo" id="game-logo">WizQuiz</h1>
             <button data-modal-target="#modal" id="quit-button">Quit</button>
-            <!--popup modal-->
-            <div class="modal" id="modal">
-                <div class="modal-header">
-                    <div class="title" id="close-button"><h2>Quitting?</h2></div>
+        </header>
+        <!--popup modal-->
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title" id="close-button"><h2>Quitting?</h2></div>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to quit?</p>
+            </div>
+            <div class="modal-buttons">
+                <a href="index.html" class="modal-button" id="yes-modal-button">YES</a>
+                <button data-close-button class="modal-button" id="no-modal-button">NO</button>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <!--choose a quiz-->
+        <div id="game-page-outer">
+            <div id="game-page-wrapper">
+                <h3>Choose a quiz?</h3>
+                <div id="quiz-option">
+                    <button data-type="animals" class="choice-button">Animals</button>
+                    <button data-type="cars" class="choice-button">Cars</button>
                 </div>
-                <div class="modal-body">
-                    <p>Are you sure you want to quit?</p>
+                <!--display question box-->
+                <div class="info-box">
+                    <h4>Question</h4>
+                    <span id="question"></span>
                 </div>
-                <div class="modal-buttons">
-                    <a href="index.html" class="modal-button" id="yes-modal-button">YES</a>
-                    <button data-close-button class="modal-button" id="no-modal-button">NO</button>
+                <!--user input box-->
+                <div class="info-box">
+                    <h5>Type your answer here:</h5>
+                    <input type="text" id="answer-box">
+                    <button data-type="submit" id="submit-button">Submit Answer</button>
+                </div>
+                <div class="score-area">
+                    <h4>Score:</h4>
+                    <p class="score">Correct Answers <span id="correct">0</span></p>
+                    <p class="score">Incorrect Answers <span id="incorrect">0</span></p>
                 </div>
             </div>
-            <div id="overlay"></div>
-        </header>
-        <!--choose a quiz-->
-        <div id="quiz-option">
-            <h3>Choose a quiz?</h3>
-            <button data-type="animals" class="choice-button">Animals</button>
-            <button data-type="cars" class="choice-button">Cars</button>
-        </div>
-        <!--display question box-->
-        <div class="info-box">
-            <h4>Question</h4>
-            <span id="question"></span>
-        </div>
-        <!--user input box-->
-        <div class="info-box">
-            <h4>Type your answer here:</h4>
-            <input type="text" id="answer-box">
-            <button data-type="submit" id="submit-button">Submit Answer</button>
-        </div>
-        <div class="score-area">
-            <h4>Score:</h4>
-            <p class="score">Correct Answers <span id="correct">0</span></p>
-            <p class="score">Correct Answers <span id="incorrect">0</span></p>
         </div>
     </section>
     <footer>

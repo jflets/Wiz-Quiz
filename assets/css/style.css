@@ -17,10 +17,18 @@ html {
     font-family: anton, sans-serif;
     background-color: #0c3969;
   }
+
+  header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
   /* home page */
 #main-section {
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,9 +37,8 @@ html {
 #main-wrapper {
     width: 90%;
     height: 35em;
-    max-height: 40em;
-    padding-top: 10em;
-    padding-bottom: 1em;
+    max-height: 50em;
+    padding: 10em 1em 1em 1em;
     background-color: #fffcfa;
     border-radius: 1em;
 }
@@ -81,31 +88,114 @@ html {
 }
 
 #start-button a:hover {
-    background-color: #a1deff;
+    background-color: green;
+    color: #fffcfa;
 }
 
 
 footer {
-    max-height: 10%;
+    height: 10%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1em;
+    padding: 0.5em 0 0.5em 0;
 }
 
 footer a {
     font-size: 40px;
-    color: #fffcfa;
     margin-left: 0.2em;
     margin-right: 0.2em;
+    color: #fffcfa;
 }
 
 footer a:hover {
-    color: #a1deff;
+    color: #4cc9c5;
 }
 
+/* game page */
 
+#quit-button {
+    width: fit-content;
+    height: fit-content;
+    font-family: anton, sans-serif;
+    margin-right: 2em;
+    font-size: 20px;
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 0.2em;
+    color: black;
+    background-color: #fffcfa;
+}
+
+#quit-button:hover {
+    color: #fffcfa;
+    background-color: red;
+}
+
+#game-page-outer {
+    width: 100%;
+    height: 40em;
+    max-height: 60em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game-page-wrapper {
+    width: 80%;
+    height: 80%;
+    background-color: #fffcfa;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+#game-page-wrapper > h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 0.5em;
+}
+
+#quiz-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice-button {
+    font-family: anton, sans-serif;
+    font-size: 40px;
+    margin: 0 0.2em 0 0;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 0.2em;
+    color: black;
+    background-color: #fffcfa;
+}
+
+.info-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-box > h4 {
+    font-size: 30px;
+}
+
+#question {
+    width: 80%;
+    height: 20px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 0.2em;
+}
 
 /* modal */
   .modal {
