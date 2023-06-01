@@ -46,20 +46,30 @@
                     <button data-type="cars" class="choice-button">Cars</button>
                 </div>
                 <!--display question box-->
-                <div class="info-box">
-                    <h4>Question</h4>
-                    <span id="question"></span>
-                </div>
-                <!--user choice-->
-                <div class="radio-buttons">
-                    <label for="a-btn" class="choice-input">A</label>
-                    <input type="radio" name="option-button" id="a-btn" value="a-btn" aria-label="option a button" class="choice-input">
-                    <label for="b-btn" class="choice-input">B</label>
-                    <input type="radio" name="option-button" id="b-btn" value="b-btn" aria-label="option a button" class="choice-input">
-                    <label for="c-btn" class="choice-input">C</label>
-                    <input type="radio" name="option-button" id="c-btn" value="c-btn" aria-label="option a button" class="choice-input">
-                    <label for="d-btn" class="choice-input">D</label>
-                    <input type="radio" name="option-button" id="d-btn" value="d-btn" aria-label="option a button" class="choice-input">
+                <div id="question-area">
+                        <h4 id="question">Question</h4>
+                    <!--user choice-->
+                    <div class="answer-buttons">
+                        <ul>
+                            <li>
+                                <label for="a-btn" class="choice-input">A</label>
+                                <input type="radio" name="option-button" id="a-btn" value="a-btn" aria-label="option a button" class="choice-input">
+                            </li>
+                            <li>
+                                <label for="b-btn" class="choice-input">B</label>
+                                <input type="radio" name="option-button" id="b-btn" value="b-btn" aria-label="option a button" class="choice-input">
+                            </li>
+                            <li>
+                                <label for="c-btn" class="choice-input">C</label>
+                                <input type="radio" name="option-button" id="c-btn" value="c-btn" aria-label="option a button" class="choice-input">
+                            </li>
+                            <li>
+                                <label for="d-btn" class="choice-input">D</label>
+                                <input type="radio" name="option-button" id="d-btn" value="d-btn" aria-label="option a button" class="choice-input">
+                            </li>
+                        </ul>
+                    </div>
+                    <button id="submit-btn">Submit</button>
                 </div>
             </div>
         </div>
