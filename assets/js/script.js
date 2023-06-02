@@ -72,3 +72,56 @@ const quizData = [
         correct: "a",
     },
 ];
+
+const quiz = document.getElementById('game-page-wrapper');
+const answerEls = document.querySelectorAll('.answer-buttons');
+const questionEls = document.getElementById('question');
+const a_text = document.getElementById('a-btn');
+const b_text = document.getElementById('b-btn');
+const c_text = document.getElementById('c-btn');
+const d_text = document.getElementById('d-btn');
+const submitBtn = document.getElementById('submit-btn')
+
+let currentQuiz = 0;
+let score = 0;
+
+loadQuiz()
+function loadQuiz() {
+    deselectAnswer();
+    const currentQuizData = quizData[currentQuiz];
+    questionEls.innerText = currentQuizData.question;
+    a_text.innerText = currentQuizData.a;
+    b_text.innerText = currentQuizData.b;
+    c_text.innerText = currentQuizData.c;
+    d_text.innerText = currentQuizData.d;
+}
+ function deselectAnswer() {
+    answerEls.forEach(answerEl => answerEl.checked = false)
+ }
+
+ function getSelected() {
+    let answer
+    answerEls.forEach(answerEls => {
+        if(answerEls.checked) {
+            answer = answerEls.id
+        }
+    })
+    return answer
+ }
+
+ submitBtn.addEventListener('click', () => {
+    const answer = getSelected()
+    if(answer) {
+        if (answer === quizData[currentQuiz].correct) {
+            score++
+        }
+
+        currentQuiz++
+
+        if(currentQuiz < quizData.length) {
+            loadQuiz()
+        } else {
+            quiz.innerHTML = '<h4>You answered ${score}/${quizData.length} questions correctly</h4> <button onclick="location.reload()">Reaload</button>'
+        }
+    }
+ })
