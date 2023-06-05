@@ -1,56 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="quiz game to test your knowledge">
-    <meta name="keywords" content="WizQuiz, quiz, game, knowledge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="quiz game to test your knowledge" />
+    <meta name="keywords" content="WizQuiz, quiz, game, knowledge" />
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="main-game-page" href="game-page.html">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="main-game-page" href="game-page.html" />
 
     <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
 
     <title>WizQuiz</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1 class="logo" alt="logo">WizQuiz</h1>
+      <h1 class="logo" alt="logo">WizQuiz</h1>
     </header>
+    <!--Intro text-->
     <section id="main-section">
-        <div id="main-wrapper">
-            <div id="intro-text">
-                <div id="welcome-text"><h2>Welcome to WizQuiz!</h2></div>
-                <div id="main-text">
-                <p>Delve into our captivating Animal Quiz and Car Quiz, each featuring five thrilling questions.</p>
-                <p>Test your expertise and aim for a high score as you explore the animal kingdom or delve into the world of cars.</p>
-                <p>Challenge yourself, expand your knowledge, and embark on an exciting quest for the perfect score.</p>
-                <p>Get ready to unleash your inner quiz champion and enjoy the thrill of WizQuiz!</p>
-                </div>
-            </div>
-            <div id="chose-quiz">
-                <h3>Choose Quiz!</h3>
-            </div>
-            <div class="start-button">
-                <a href="game-page.html" onclick="sessionStorage.setItem('selectedQuiz', 'html')">HTML Quiz</a>
-                <a href="game-page.html" onclick="sessionStorage.setItem('selectedQuiz', 'javascript')">JavaScript Quiz</a>
-            </div>
+      <div id="main-wrapper">
+        <div id="intro-text">
+          <div id="welcome-text"><h2>Welcome to WizQuiz!</h2></div>
+          <div id="main-text">
+            <p>
+              Delve into our captivating Animal Quiz and Car Quiz, each
+              featuring five thrilling questions.
+            </p>
+            <p>
+              Test your expertise and aim for a high score as you explore the
+              animal kingdom or delve into the world of cars.
+            </p>
+            <p>
+              Challenge yourself, expand your knowledge, and embark on an
+              exciting quest for the perfect score.
+            </p>
+            <p>
+              Get ready to unleash your inner quiz champion and enjoy the thrill
+              of WizQuiz!
+            </p>
+          </div>
         </div>
+        <!--Quiz choice buttons-->
+        <div id="chose-quiz">
+          <h3>Choose Quiz!</h3>
+        </div>
+        <div class="start-button">
+          <a
+            href="game-page.html"
+            onclick="sessionStorage.setItem('selectedQuiz', 'html')"
+            >HTML Quiz</a
+          >
+          <a
+            href="game-page.html"
+            onclick="sessionStorage.setItem('selectedQuiz', 'javascript')"
+            >JavaScript Quiz</a
+          >
+        </div>
+      </div>
     </section>
+    <!--Footer-->
     <footer>
-        <div class="social-links">
-            <a href="http://facebook.com" target="_blank" rel="noopener" aria-label="Visit our facebook page (opens in new tab)"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="http://instagram.com" target="_blank" rel="noopener" aria-label="Visit our instagram page (opens in new tab)"><i class="fa-brands fa-square-instagram"></i></a>
-        </div>
+      <div class="social-links">
+        <a
+          href="http://facebook.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit our facebook page (opens in new tab)"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a
+          href="http://instagram.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit our instagram page (opens in new tab)"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+      </div>
     </footer>
     <script src="assets/js/script.js"></script>
     <script
       src="https://kit.fontawesome.com/1e0d8579f1.js"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>

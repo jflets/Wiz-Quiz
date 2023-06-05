@@ -1,87 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="quiz game to test your knowledge">
-    <meta name="keywords" content="WizQuiz, quiz, game, knowledge">
-    
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="index" href="index.html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="quiz game to test your knowledge" />
+    <meta name="keywords" content="WizQuiz, quiz, game, knowledge" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="index" href="index.html" />
 
     <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+
     <title>WizQuiz</title>
-</head>
-<body>
+  </head>
+  <body>
     <section id="main-game-section">
-        <header>
-            <h1 class="logo" id="game-logo">WizQuiz</h1>
-            <button data-modal-target="#modal" id="quit-button">Quit</button>
-        </header>
-        <!--popup modal-->
-        <div class="modal" id="modal">
-            <div class="modal-header">
-                <div class="title" id="close-button"><h2>Quitting?</h2></div>
-            </div>
-            <div class="modal-body">
-                <p>Are you sure you want to quit?</p>
-            </div>
-            <div class="modal-buttons">
-                <a href="index.html" class="modal-button" id="yes-modal-button">YES</a>
-                <button data-close-button class="modal-button" id="no-modal-button">NO</button>
-            </div>
+      <header>
+        <h1 class="logo" id="game-logo">WizQuiz</h1>
+        <button data-modal-target="#modal" id="quit-button">Quit</button>
+      </header>
+      <!--popup modal-->
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title" id="close-button"><h2>Quitting?</h2></div>
         </div>
-        <div id="overlay"></div>
-        <!--quiz-->
-        <div id="game-page-outer">
-            <div id="game-page-wrapper">
-                <h3 id="quiz-title">Quiz Title</h3>
-                <!--display question box-->
-                <div id="question-area">
-                    <h4 id="question">Question</h4>
-                    <!--user choice-->
-                    <div class="answer-buttons">
-                        <ul>
-                            <li>
-                                <input type="radio" name="answer" id="a" aria-label="option a button" class="answer">
-                                <label for="a" id="a-btn">Answer</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="answer" id="b" aria-label="option b button" class="answer">
-                                <label for="b" id="b-btn">Answer</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="answer" id="c" aria-label="option c button" class="answer">
-                                <label for="c" id="c-btn">Answer</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="answer" id="d" aria-label="option d button" class="answer">
-                                <label for="d" id="d-btn">Answer</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <button id="submit">Submit</button>
-                </div>
-            </div>
+        <div class="modal-body">
+          <p>Are you sure you want to quit?</p>
         </div>
+        <div class="modal-buttons">
+          <a href="index.html" class="modal-button" id="yes-modal-button"
+            >YES</a
+          >
+          <button data-close-button class="modal-button" id="no-modal-button">
+            NO
+          </button>
+        </div>
+      </div>
+      <div id="overlay"></div>
+      <!--quiz-->
+      <div id="game-page-outer">
+        <div id="game-page-wrapper">
+          <h3 id="quiz-title">Quiz Title</h3>
+          <div id="question-area">
+            <h4 id="question">Question</h4>
+            <!--Answers-->
+            <div class="answer-buttons">
+              <ul>
+                <li>
+                  <input
+                    type="radio"
+                    name="answer"
+                    id="a"
+                    aria-label="option a button"
+                    class="answer"
+                  />
+                  <label for="a" id="a-btn">Answer</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="answer"
+                    id="b"
+                    aria-label="option b button"
+                    class="answer"
+                  />
+                  <label for="b" id="b-btn">Answer</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="answer"
+                    id="c"
+                    aria-label="option c button"
+                    class="answer"
+                  />
+                  <label for="c" id="c-btn">Answer</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="answer"
+                    id="d"
+                    aria-label="option d button"
+                    class="answer"
+                  />
+                  <label for="d" id="d-btn">Answer</label>
+                </li>
+              </ul>
+            </div>
+            <button id="submit">Submit</button>
+          </div>
+        </div>
+      </div>
     </section>
     <!--Footer-->
     <footer>
-        <div class="social-links">
-            <a href="http://facebook.com" target="_blank" rel="noopener" aria-label="Visit our facebook page (opens in new tab)"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="http://instagram.com" target="_blank" rel="noopener" aria-label="Visit our instagram page (opens in new tab)"><i class="fa-brands fa-square-instagram"></i></a>
-        </div>
+      <div class="social-links">
+        <a
+          href="http://facebook.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit our facebook page (opens in new tab)"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a
+          href="http://instagram.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit our instagram page (opens in new tab)"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+      </div>
     </footer>
     <script src="assets/js/script.js"></script>
     <script
       src="https://kit.fontawesome.com/1e0d8579f1.js"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>
-
