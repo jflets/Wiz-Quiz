@@ -91,7 +91,7 @@ const quizDataHTML = [
       correct: "d",
     },
     {
-      question: "What is the output of the following code?\n\nconsole.log(2 + 2 + '2');",
+      question: "What is the output of the following code? console.log(2 + 2 + '2');",
       a: "4",
       b: "22",
       c: "24",
@@ -107,7 +107,7 @@ const quizDataHTML = [
       correct: "a",
     },
     {
-      question: "What is the result of the following expression?\n\ntypeof null;",
+      question: "What is the result of the following expression? typeof null;",
       a: "'object'",
       b: "'null'",
       c: "'undefined'",
