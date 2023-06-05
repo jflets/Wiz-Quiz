@@ -129,21 +129,20 @@ const quizDataHTML = [
   let score = 0;
   let currentQuizData = quizDataHTML;
   
-  // Get the selected quiz from the index page
-  const selectedQuiz = sessionStorage.getItem('selectedQuiz');
-  if (selectedQuiz === 'javascript') {
-    currentQuizData = quizDataJavaScript;
-  }
-  
   loadQuiz();
   
   function loadQuiz() {
     deselectAnswer();
-    questionEls.innerText = currentQuizData[currentQuiz].question;
-    a_text.innerText = currentQuizData[currentQuiz].a;
-    b_text.innerText = currentQuizData[currentQuiz].b;
-    c_text.innerText = currentQuizData[currentQuiz].c;
-    d_text.innerText = currentQuizData[currentQuiz].d;
+    currentQuizData = getCurrentQuizData();
+    questionEls.innerText = currentQuizData.question;
+    a_text.innerText = currentQuizData.a;
+    b_text.innerText = currentQuizData.b;
+    c_text.innerText = currentQuizData.c;
+    d_text.innerText = currentQuizData.d;
+  }
+  
+  function getCurrentQuizData() {
+    return currentQuiz < quizDataHTML.length ? quizDataHTML[currentQuiz] : quizDataJavaScript[currentQuiz - quizDataHTML.length];
   }
   
   function deselectAnswer() {
@@ -162,19 +161,28 @@ const quizDataHTML = [
     return answer;
   }
   
+  const selectedQuiz = sessionStorage.getItem('selectedQuiz');
+  if (selectedQuiz === 'javascript') {
+    currentQuizData = quizDataJavaScript;
+  }
+
+  const buttonName = selectedQuiz === 'javascript' ? 'JavaScript Quiz' : 'HTML Quiz';
+  const titleEl = document.getElementById('quiz-title');
+  titleEl.innerText = buttonName;
+  
   submitBtn.addEventListener('click', () => {
     const answer = getSelected();
     if (answer) {
-      if (answer === currentQuizData[currentQuiz].correct) {
+      if (answer === currentQuizData.correct) {
         score++;
       }
   
       currentQuiz++;
   
-      if (currentQuiz < currentQuizData.length) {
+      if (currentQuiz < quizDataHTML.length + quizDataJavaScript.length) {
         loadQuiz();
       } else {
-        quiz.innerHTML = `<h4>You answered ${score}/${currentQuizData.length} questions correctly</h4><button id="reload" onclick="location.reload()">Reload</button>`;
+        quiz.innerHTML = `<h4>You answered ${score}/${quizDataHTML.length + quizDataJavaScript.length} questions correctly</h4><button id="reload" onclick="location.reload()">Reload</button>`;
       }
     }
   });
