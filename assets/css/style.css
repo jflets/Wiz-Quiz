@@ -167,6 +167,11 @@ footer a:hover {
   box-sizing: border-box;
 }
 
+#game-page-wrapper h4 {
+  font-size: 30px;
+  padding: 0.5em;
+}
+
 #question-area {
   width: 100%;
   display: flex;
@@ -225,6 +230,7 @@ footer a:hover {
 
 #reload {
   height: 90px;
+  width: 80%;
   font-size: 30px;
   font-family: anton, sans-serif;
   display: flex;
@@ -232,9 +238,8 @@ footer a:hover {
   align-items: center;
   background-color: transparent;
   border: none;
-  border-top: 3px solid black;
-  border-bottom-left-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
+  border: 3px solid black;
+  border-radius: 10px;
   box-sizing: border-box;
   margin-bottom: 1em;
 }
@@ -363,6 +368,10 @@ footer a:hover {
 
   #game-page-wrapper h3 {
     font-size: 30px;
+  }
+
+  #game-page-wrapper h4 {
+    font-size: 25px;
   }
 
   .choice-button {

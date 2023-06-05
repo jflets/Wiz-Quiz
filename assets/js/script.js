@@ -30,102 +30,152 @@ function closeModal(modal) {
 }
 
 //question area
-const quizData = [
-  {
-    question: "What does HTML stand for?",
-    a: "Hyper Text Markup Language",
-    b: "High Tech Machine Learning",
-    c: "Home Tool Management Language",
-    d: "Human Task Modeling Logic",
-    correct: "a",
-  },
-  {
-    question: "Which tag is used to define the main content of an HTML document?",
-    a: "<header>",
-    b: "<footer>",
-    c: "<main>",
-    d: "<section>",
-    correct: "c",
-  },
-  {
-    question: "What is the correct way to create a hyperlink in HTML?",
-    a: "<link>",
-    b: "<a href=''>",
-    c: "<url>",
-    d: "<hyperlink>",
-    correct: "b",
-  },
-  {
-    question: "Which attribute is used to specify the CSS styling for an HTML element?",
-    a: "style",
-    b: "class",
-    c: "id",
-    d: "src",
-    correct: "a",
-  },
-  {
-    question: "What is the correct HTML tag for inserting a line break?",
-    a: "<br>",
-    b: "<break>",
-    c: "<lb>",
-    d: "<newline>",
-    correct: "a",
-  },
-];
-
-const quiz = document.getElementById('game-page-wrapper');
-const answerEls = document.querySelectorAll('.answer-buttons input');
-const questionEls = document.getElementById('question');
-const a_text = document.getElementById('a-btn');
-const b_text = document.getElementById('b-btn');
-const c_text = document.getElementById('c-btn');
-const d_text = document.getElementById('d-btn');
-const submitBtn = document.getElementById('submit');
-
-let currentQuiz = 0;
-let score = 0;
-
-loadQuiz();
-
-function loadQuiz() {
-  deselectAnswer();
-  const currentQuizData = quizData[currentQuiz];
-  questionEls.innerText = currentQuizData.question;
-  a_text.innerText = currentQuizData.a;
-  b_text.innerText = currentQuizData.b;
-  c_text.innerText = currentQuizData.c;
-  d_text.innerText = currentQuizData.d;
-}
-
-function deselectAnswer() {
-  answerEls.forEach(answerEl => {
-    answerEl.checked = false;
-  });
-}
-
-function getSelected() {
-  let answer;
-  answerEls.forEach(answerEl => {
-    if (answerEl.checked) {
-      answer = answerEl.id;
-    }
-  });
-  return answer;
-}
-
-submitBtn.addEventListener('click', () => {
-  const answer = getSelected();
-  if (answer) {
-    if (answer === quizData[currentQuiz].correct) {
-      score++;
-    }
-
-    currentQuiz++;
-
-    if (currentQuiz < quizData.length) {
-      loadQuiz();
-    } else {
-      quiz.innerHTML = `<h4>You answered ${score}/${quizData.length} questions correctly</h4><button id="reload" onclick="location.reload()">Reload</button>`;
-    }
+const quizDataHTML = [
+    {
+      question: "What does HTML stand for?",
+      a: "Hyper Text Markup Language",
+      b: "High Tech Machine Learning",
+      c: "Home Tool Management Language",
+      d: "Human Task Modeling Logic",
+      correct: "a",
+    },
+    {
+      question: "Which tag is used to define the main content of an HTML document?",
+      a: "<header>",
+      b: "<footer>",
+      c: "<main>",
+      d: "<section>",
+      correct: "c",
+    },
+    {
+      question: "What is the correct way to create a hyperlink in HTML?",
+      a: "<link>",
+      b: "<a href=''>",
+      c: "<url>",
+      d: "<hyperlink>",
+      correct: "b",
+    },
+    {
+      question: "Which attribute is used to specify the CSS styling for an HTML element?",
+      a: "style",
+      b: "class",
+      c: "id",
+      d: "src",
+      correct: "a",
+    },
+    {
+      question: "What is the correct HTML tag for inserting a line break?",
+      a: "<br>",
+      b: "<break>",
+      c: "<lb>",
+      d: "<newline>",
+      correct: "a",
+    },
+  ];
+  
+  const quizDataJavaScript = [
+    {
+      question: "What is JavaScript?",
+      a: "A programming language",
+      b: "A style sheet language",
+      c: "A markup language",
+      d: "A database query language",
+      correct: "a",
+    },
+    {
+      question: "Which statement is used to declare a JavaScript variable?",
+      a: "let",
+      b: "var",
+      c: "const",
+      d: "All of the above",
+      correct: "d",
+    },
+    {
+      question: "What is the output of the following code?\n\nconsole.log(2 + 2 + '2');",
+      a: "4",
+      b: "22",
+      c: "24",
+      d: "None of the above",
+      correct: "b",
+    },
+    {
+      question: "Which method is used to add an element to the end of an array in JavaScript?",
+      a: "push()",
+      b: "pop()",
+      c: "shift()",
+      d: "unshift()",
+      correct: "a",
+    },
+    {
+      question: "What is the result of the following expression?\n\ntypeof null;",
+      a: "'object'",
+      b: "'null'",
+      c: "'undefined'",
+      d: "'number'",
+      correct: "a",
+    },
+  ];
+  
+  const quiz = document.getElementById('game-page-wrapper');
+  const answerEls = document.querySelectorAll('.answer-buttons input');
+  const questionEls = document.getElementById('question');
+  const a_text = document.getElementById('a-btn');
+  const b_text = document.getElementById('b-btn');
+  const c_text = document.getElementById('c-btn');
+  const d_text = document.getElementById('d-btn');
+  const submitBtn = document.getElementById('submit');
+  
+  let currentQuiz = 0;
+  let score = 0;
+  let currentQuizData = quizDataHTML;
+  
+  // Get the selected quiz from the index page
+  const selectedQuiz = sessionStorage.getItem('selectedQuiz');
+  if (selectedQuiz === 'javascript') {
+    currentQuizData = quizDataJavaScript;
   }
-});
+  
+  loadQuiz();
+  
+  function loadQuiz() {
+    deselectAnswer();
+    questionEls.innerText = currentQuizData[currentQuiz].question;
+    a_text.innerText = currentQuizData[currentQuiz].a;
+    b_text.innerText = currentQuizData[currentQuiz].b;
+    c_text.innerText = currentQuizData[currentQuiz].c;
+    d_text.innerText = currentQuizData[currentQuiz].d;
+  }
+  
+  function deselectAnswer() {
+    answerEls.forEach(answerEl => {
+      answerEl.checked = false;
+    });
+  }
+  
+  function getSelected() {
+    let answer;
+    answerEls.forEach(answerEl => {
+      if (answerEl.checked) {
+        answer = answerEl.id;
+      }
+    });
+    return answer;
+  }
+  
+  submitBtn.addEventListener('click', () => {
+    const answer = getSelected();
+    if (answer) {
+      if (answer === currentQuizData[currentQuiz].correct) {
+        score++;
+      }
+  
+      currentQuiz++;
+  
+      if (currentQuiz < currentQuizData.length) {
+        loadQuiz();
+      } else {
+        quiz.innerHTML = `<h4>You answered ${score}/${currentQuizData.length} questions correctly</h4><button id="reload" onclick="location.reload()">Reload</button>`;
+      }
+    }
+  });
+  
