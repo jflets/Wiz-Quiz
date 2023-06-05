@@ -122,6 +122,12 @@ footer a:hover {
 }
 
 /* game page */
+
+#main-game-section {
+  width: 100vw;
+  height: 100vh;
+}
+
 #quit-button {
   width: fit-content;
   height: fit-content;
@@ -141,18 +147,16 @@ footer a:hover {
 }
 
 #game-page-outer {
-  width: 100%;
-  height: 40em;
-  max-height: 60em;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #game-page-wrapper {
-  width: 100%;
-  max-width: 50%;
-  height: 80%;
+  width: 80vw;
+  height: 75vh;
   background-color: #fffcfa;
   border-radius: 1em;
   overflow: hidden;
@@ -167,6 +171,7 @@ footer a:hover {
 
 #game-page-wrapper h3 {
   width: 100%;
+  letter-spacing: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,6 +179,9 @@ footer a:hover {
   padding: 0.5em;
   margin: 0;
   box-sizing: border-box;
+  border-radius: 10px;
+  color: #fffcfa;
+  background-color: #0c3969;
 }
 
 #game-page-wrapper h4 {
@@ -199,7 +207,7 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 1em;
 }
 
@@ -397,3 +405,31 @@ footer a:hover {
     margin-bottom: 0.5em;
   }
 }
+
+/* Media Query for larger screens */
+@media (min-width: 1500px) {
+  #game-page-wrapper {
+    max-width: 80%;
+    max-height: 45%;
+  }
+
+  #game-page-wrapper h3 {
+    font-size: 70px;
+  }
+
+  #game-page-wrapper h4 {
+    font-size: 60px;
+  }
+
+  .answer-buttons {
+    font-size: 50px;
+  }
+
+  #question {
+    font-size: 50px;
+  }
+  #submit {
+    font-size: 60px;
+  }
+}
+
