@@ -120,6 +120,7 @@ const quizDataJavaScript = [
   },
 ];
 
+
 const quiz = document.getElementById("game-page-wrapper");
 const answerEls = document.querySelectorAll(".answer-buttons input");
 const questionEls = document.getElementById("question");
@@ -128,27 +129,36 @@ const b_text = document.getElementById("b-btn");
 const c_text = document.getElementById("c-btn");
 const d_text = document.getElementById("d-btn");
 const submitBtn = document.getElementById("submit");
+const titleEl = document.getElementById("quiz-title");
 
 let currentQuiz = 0;
 let score = 0;
-let currentQuizData = quizDataHTML;
+let selectedQuiz = sessionStorage.getItem("selectedQuiz");
+let currentQuizData;
+
+if (selectedQuiz === "javascript") {
+  currentQuizData = quizDataJavaScript;
+  titleEl.innerText = "JavaScript Quiz";
+} else {
+  currentQuizData = quizDataHTML;
+  titleEl.innerText = "HTML Quiz";
+}
 
 loadQuiz();
 
 function loadQuiz() {
-  deselectAnswer();
-  currentQuizData = getCurrentQuizData();
-  questionEls.innerText = currentQuizData.question;
-  a_text.innerText = currentQuizData.a;
-  b_text.innerText = currentQuizData.b;
-  c_text.innerText = currentQuizData.c;
-  d_text.innerText = currentQuizData.d;
-}
+  if (currentQuiz >= currentQuizData.length) {
+    showFinalScore();
+    return;
+  }
 
-function getCurrentQuizData() {
-  return currentQuiz < quizDataHTML.length
-    ? quizDataHTML[currentQuiz]
-    : quizDataJavaScript[currentQuiz - quizDataHTML.length];
+  const currentQuestion = currentQuizData[currentQuiz];
+  
+  questionEls.innerText = currentQuestion.question;
+  a_text.innerText = currentQuestion.a;
+  b_text.innerText = currentQuestion.b;
+  c_text.innerText = currentQuestion.c;
+  d_text.innerText = currentQuestion.d;
 }
 
 function deselectAnswer() {
@@ -166,32 +176,22 @@ function getSelected() {
   });
   return answer;
 }
-// User choice title
-const selectedQuiz = sessionStorage.getItem("selectedQuiz");
-if (selectedQuiz === "javascript") {
-  currentQuizData = quizDataJavaScript;
-}
 
-const buttonName =
-  selectedQuiz === "javascript" ? "JavaScript Quiz" : "HTML Quiz";
-const titleEl = document.getElementById("quiz-title");
-titleEl.innerText = buttonName;
+function showFinalScore() {
+  quiz.innerHTML = `<h4>You answered ${score}/${
+    currentQuizData.length
+  } questions correctly</h4><button id="reload" onclick="location.reload()">Reload</button>`;
+}
 
 submitBtn.addEventListener("click", () => {
   const answer = getSelected();
   if (answer) {
-    if (answer === currentQuizData.correct) {
+    if (answer === currentQuizData[currentQuiz].correct) {
       score++;
     }
 
     currentQuiz++;
 
-    if (currentQuiz < quizDataHTML.length + quizDataJavaScript.length) {
-      loadQuiz();
-    } else {
-      quiz.innerHTML = `<h4>You answered ${score}/${
-        quizDataHTML.length + quizDataJavaScript.length
-      } questions correctly</h4><button id="reload" onclick="location.reload()">Reload</button>`;
-    }
+    loadQuiz();
   }
 });
