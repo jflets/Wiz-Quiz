@@ -1,4 +1,3 @@
-/* eslint-disable esversion: 6 */
 //modal code
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
