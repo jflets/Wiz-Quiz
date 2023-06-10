@@ -2,34 +2,29 @@
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");
-
 openModalButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const modal = document.querySelector(button.dataset.modalTarget);
     openModal(modal);
   });
 });
-
 closeModalButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const modal = button.closest(".modal");
     closeModal(modal);
   });
 });
-
 function openModal(modal) {
   if (modal == null) return;
   modal.classList.add("active");
   overlay.classList.add("active");
 }
-
 function closeModal(modal) {
   if (modal == null) return;
   modal.classList.remove("active");
   overlay.classList.remove("active");
 }
-
-//question area
+//Quiz questions and answers
 const quizDataHTML = [
   {
     question: "What does HTML stand for?",
@@ -74,7 +69,6 @@ const quizDataHTML = [
     correct: "a",
   },
 ];
-
 const quizDataJavaScript = [
   {
     question: "What is JavaScript?",
@@ -119,8 +113,6 @@ const quizDataJavaScript = [
     correct: "a",
   },
 ];
-
-
 const quiz = document.getElementById("game-page-wrapper");
 const answerEls = document.querySelectorAll(".answer-buttons input");
 const questionEls = document.getElementById("question");
@@ -130,12 +122,10 @@ const c_text = document.getElementById("c-btn");
 const d_text = document.getElementById("d-btn");
 const submitBtn = document.getElementById("submit");
 const titleEl = document.getElementById("quiz-title");
-
 let currentQuiz = 0;
 let score = 0;
 let selectedQuiz = sessionStorage.getItem("selectedQuiz");
 let currentQuizData;
-
 if (selectedQuiz === "javascript") {
   currentQuizData = quizDataJavaScript;
   titleEl.innerText = "JavaScript Quiz";
@@ -143,30 +133,24 @@ if (selectedQuiz === "javascript") {
   currentQuizData = quizDataHTML;
   titleEl.innerText = "HTML Quiz";
 }
-
 loadQuiz();
-
 function loadQuiz() {
   if (currentQuiz >= currentQuizData.length) {
     showFinalScore();
     return;
   }
-
   const currentQuestion = currentQuizData[currentQuiz];
-  
   questionEls.innerText = currentQuestion.question;
   a_text.innerText = currentQuestion.a;
   b_text.innerText = currentQuestion.b;
   c_text.innerText = currentQuestion.c;
   d_text.innerText = currentQuestion.d;
 }
-
 function deselectAnswer() {
   answerEls.forEach((answerEl) => {
     answerEl.checked = false;
   });
 }
-
 function getSelected() {
   let answer;
   answerEls.forEach((answerEl) => {
@@ -176,13 +160,10 @@ function getSelected() {
   });
   return answer;
 }
-
+// Reload button and score
 function showFinalScore() {
-  quiz.innerHTML = `<h4>You answered ${score}/${
-    currentQuizData.length
-  } questions correctly</h4><button id="reload" onclick="location.reload()">Reload</button>`;
+  quiz.innerHTML = `<h4>You answered ${score}/${currentQuizData.length} questions correctly</h4><button id="reload" onclick="location.reload()">Reload</button>`;
 }
-
 submitBtn.addEventListener("click", () => {
   const answer = getSelected();
   if (answer) {
