@@ -12,27 +12,43 @@ By participating in the quizzes, users can test their knowledge and understandin
 
 ## Key Points
 
+- Information what the game is and how to play.
+- Two games are available to play based around HTML and JavaScript.
+- A quit button so users can leave the game at anytime.
+- A reload button to allow users to try get a higher score.
+
 ## Target Audience
 
+- Coding enthusiasts.
+- Beginners learning HTML and JavaScript.
+
 ## User Stories
+
+1. As a coding novice, I want to practice my HTML and JavaScript skills in a fun and interactive way, so I can improve my understanding of these programming languages.
+
+2. As a beginner in web development, I want to track my progress and see my improvement over time as I engage with the HTML and JavaScript quizzes, so I can build my confidence in coding.
+
+3. As a student studying programming, I want to have access to a platform that offers code-based quizzes specifically for HTML and JavaScript, so I can supplement my learning and reinforce the concepts I've been taught.
+
+4. As a coding hobbyist, I want to join an online community of like-minded individuals who are passionate about HTML and JavaScript, so I can engage in discussions, share knowledge, and challenge myself through friendly competition.
 
 # Design
 
 ## Color Scheme
 
+![Color Pallet](/assets/images/Coolors.png)
+
+The website uses a simple color pallet with high contrasting colors. The color pallet was created using the [Coolors](https://coolors.co) website.
+
 ## Typography
 
 Google Fonts was used for the following fonts:
 
-## Imagery
+- Anton regular 400 was used across the site.
 
 ## Wireframe
 
 # Features
-
-- _The landing page image_
-
-- _The Footer_
 
 ## Features Left to Implement
 
@@ -56,7 +72,7 @@ Google Fonts was used for the following fonts:
 
 - _CSS_
 
-  - No errors or warnings returned when passing through the official [W3C Validator](9https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjflets.github.io%2FWiz-Quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No errors or warnings returned when passing through the official [W3C Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjflets.github.io%2FWiz-Quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 - _JavaScript_
   - No errors or warnings returned when passing through the official [jshint](https://jshint.com/)
