@@ -378,7 +378,9 @@ footer a:hover {
     min-height: 40em;
   }
   #game-page-wrapper {
-    max-width: 90%;
+    width: 90vw;
+    height: auto;
+    padding: 1em;
   }
   #game-page-wrapper h3 {
     font-size: 30px;
@@ -386,16 +388,17 @@ footer a:hover {
   #game-page-wrapper h4 {
     font-size: 25px;
   }
-  .choice-button {
-    font-size: 30px;
-  }
   #question {
     font-size: 25px;
   }
   .answer-buttons {
-    font-size: 20px;
-    margin-left: 0.2em;
-    margin-bottom: 0.5em;
+    font-size: 25px;
+  }
+  #submit {
+    font-size: 25px;
+  }
+  #reload {
+    font-size: 25px;
   }
 }
 /* Media Query for screens up to 480px wide */
@@ -420,5 +423,26 @@ footer a:hover {
     font-size: 25px;
     margin-left: 0.1em;
     margin-right: 0.1em;
+  }
+  #game-page-wrapper {
+    width: 95vw;
+  }
+  #game-page-wrapper h3 {
+    font-size: 25px;
+  }
+  #game-page-wrapper h4 {
+    font-size: 20px;
+  }
+  #question {
+    font-size: 20px;
+  }
+  .answer-buttons {
+    font-size: 20px;
+  }
+  #submit {
+    font-size: 20px;
+  }
+  #reload {
+    font-size: 20px;
   }
 }
