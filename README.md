@@ -2,7 +2,7 @@
 
 Welcome to WixQuiz, where coding meets excitement! Immerse yourself in our HTML and JavaScript quizzes, featuring five mind-boggling questions each. Put your coding skills to the test and aim for a top score as you explore the intricacies of HTML or dive into the world of JavaScript. Challenge yourself, expand your coding prowess, and embark on an exhilarating quest for knowledge. Whether you're a coding novice or an experienced developer, WixQuiz offers an engaging platform to enhance your HTML and JavaScript expertise. Join us now and experience the thrill of code-based quizzes at WixQuiz!
 
-![Responsive Mockup]()
+![Responsive Mockup](/assets/images/responsive-mocup.png)
 
 # User Experience (UX)
 
@@ -47,6 +47,12 @@ Google Fonts was used for the following fonts:
 - Anton regular 400 was used across the site.
 
 ## Wireframe
+
+The wireframe was created for the overall site using [Figma](https://www.figma.com)
+
+![Wireframe](/assets/images/main-page-wireframe.png)
+![Wireframe](/assets/images/game-page-wireframe.png)
+![Wireframe](/assets/images/score-page-wireframe.png)
 
 # Features
 
