@@ -307,7 +307,32 @@ footer a:hover {
   opacity: 1;
   pointer-events: all;
 }
-/* Media Query for Tablet Sizes */
+/* Media Query for larger screens */
+@media (min-width: 1500px) {
+  #quit-button {
+    font-size: 40px;
+  }
+  #game-page-wrapper {
+    max-width: 80%;
+    max-height: 45%;
+  }
+  #game-page-wrapper h3 {
+    font-size: 70px;
+  }
+  #game-page-wrapper h4 {
+    font-size: 60px;
+  }
+  .answer-buttons {
+    font-size: 50px;
+  }
+  #question {
+    font-size: 50px;
+  }
+  #submit {
+    font-size: 60px;
+  }
+}
+/* Media Query for medium screen Sizes */
 @media (max-width: 1023px) {
   #game-page-wrapper {
     max-width: 80%;
@@ -319,8 +344,31 @@ footer a:hover {
     font-size: 22px;
   }
 }
-/* Media Query for Mobile Device Sizes */
+/* Media Query for Tablet Device Sizes */
 @media (max-width: 767px) {
+  #main-wrapper {
+    height: auto;
+    max-height: none;
+    padding: 5em 1em 1em 1em;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  #welcome-text {
+    font-size: 25px;
+  }
+  #main-text p {
+    font-size: 18px;
+  }
+  .start-button {
+    font-size: 25px;
+  }
+  #chose-quiz {
+    font-size: 20px;
+  }
+  footer a {
+    font-size: 30px;
+  }
   #quit-button {
     font-size: 16px;
     margin-right: 1em;
@@ -350,28 +398,27 @@ footer a:hover {
     margin-bottom: 0.5em;
   }
 }
-/* Media Query for larger screens */
-@media (min-width: 1500px) {
-  #quit-button {
-    font-size: 40px;
+/* Media Query for screens up to 480px wide */
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 25px;
+    padding: 5px 0 5px 10px;
   }
-  #game-page-wrapper {
-    max-width: 80%;
-    max-height: 45%;
+  #welcome-text {
+    font-size: 20px;
   }
-  #game-page-wrapper h3 {
-    font-size: 70px;
+  #main-text p {
+    font-size: 16px;
   }
-  #game-page-wrapper h4 {
-    font-size: 60px;
+  .start-button {
+    font-size: 20px;
   }
-  .answer-buttons {
-    font-size: 50px;
+  #chose-quiz {
+    font-size: 18px;
   }
-  #question {
-    font-size: 50px;
-  }
-  #submit {
-    font-size: 60px;
+  footer a {
+    font-size: 25px;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
   }
 }
