@@ -56,6 +56,10 @@ The wireframe was created for the overall site using [Figma](https://www.figma.c
 
 # Features
 
+- _Favicon_
+
+  - The page has a custom favicon. This reassures the user that this is a legitimate site. Promoting a positive user experience.
+
 - _Landing Page Description_
 
   - The landing page there is a description of what the site offers and how the games work. This provides the user with an understanding on how the site works. This will result in the a positive user experience.
