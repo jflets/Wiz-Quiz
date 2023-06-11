@@ -50,6 +50,17 @@ Google Fonts was used for the following fonts:
 
 ## Validator Testing
 
+- _HTML_
+
+  - No errors or warnings returned when passing through the official [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjflets.github.io%2FWiz-Quiz%2F)
+
+- _CSS_
+
+  - No errors or warnings returned when passing through the official [W3C Validator](9https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjflets.github.io%2FWiz-Quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+- _JavaScript_
+  - No errors or warnings returned when passing through the official [jshint](https://jshint.com/)
+
 ## Solved Bugs
 
 ## Testing User Stories
