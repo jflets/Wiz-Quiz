@@ -144,6 +144,15 @@ Google Dev Tools - To test and trouble shoot features and solve issues withe the
 
 I used Lighthouse in the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
 
+Index.html
+
+Console Error:
+
+1. script.js:131 Uncaught TypeError: Cannot set properties of null (setting 'innerText'). The error is caused because the element that is trying to be found is located on the game page. This error does not effect the functionality of the site.
+
+![Index Lighthouse Score](/assets/images/index-lighthouse-test.png)
+1[Game Page Lighthouse Score](/assets/images/javascript-lighthouse-test.png)
+
 ## Validator Testing
 
 - _HTML_
