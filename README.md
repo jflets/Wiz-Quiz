@@ -118,6 +118,22 @@ HTML, CSS and JavaScript where used to create the whole site.
 
 # Frameworks, Libraries and Programs Used
 
+Figma - To create wireframe.
+
+Git - For version control.
+
+Github - To save and share files for the site.
+
+VScode - IDE used to code the site.
+
+Google Fonts - To import fonts used on the site.
+
+Font Awesome - To import the icons used on the site.
+
+Google Dev Tools - To test and trouble shoot features and solve issues withe the responsiveness of the site.
+
+[TechSini](https://techsini.com/multi-mockup/) - To create responsive mockups.
+
 # Testing
 
 ## Screen Size Testing
