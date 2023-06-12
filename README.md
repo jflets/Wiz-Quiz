@@ -114,6 +114,8 @@ Throughout coding this site I kept accessibility in mind, to ensure that the web
 
 # Technologies Used
 
+HTML, CSS and JavaScript where used to create the whole site.
+
 # Frameworks, Libraries and Programs Used
 
 # Testing
