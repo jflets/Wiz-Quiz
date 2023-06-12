@@ -106,6 +106,12 @@ The wireframe was created for the overall site using [Figma](https://www.figma.c
 
 # Accessibility
 
+Throughout coding this site I kept accessibility in mind, to ensure that the website is user friendly for any user. I did this by:
+
+- Using semantic HTML.
+- Using descriptive aria labels for all links.
+- Providing information for screen readers when using icons - such as footer icons.
+
 # Technologies Used
 
 # Frameworks, Libraries and Programs Used
