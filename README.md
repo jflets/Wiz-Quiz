@@ -59,31 +59,39 @@ The wireframe was created for the overall site using [Figma](https://www.figma.c
 - _Favicon_
 
   - The page has a custom favicon. This reassures the user that this is a legitimate site. Promoting a positive user experience.
+    ![favicon](/assets/images/favicon.png)
 
 - _Landing Page Description_
 
   - The landing page there is a description of what the site offers and how the games work. This provides the user with an understanding on how the site works. This will result in the a positive user experience.
+    ![Landing page text](/assets/images/landing-page-text.png)
 
 - _Quiz Choice Buttons_
 
   - The main page includes two quiz choice buttons. This allows the user to decide what quiz the would like to take.
   - The buttons have a hover effect that will change the background color of the button to green. This will make it easy for the user to know what button they are clicking. This will result in a positive user experience.
+    ![Choice Buttons](/assets/images/choice-buttons.png)
 
 - _Quit Button_
 
   - On the game page there is a quit button that will allow the user to quit the game at anytime. The button will trigger a popup that asks the sure if they are sure they want to quit. This makes sure that the user doesn't accidentally quit the game. This gives provides a good user experience.
+    ![Popup](/assets/images/popup.png)
 
 - _Quiz_
 
   - The quizzes are made up of 5 questions and each have 4 multiple choice answers. They are based around HTML and JavaScript. The user will select their answer and the next question will be prompted. This make it easy for users to navigate, promoting a good user experience.
+    ![HTML Quiz](/assets/images/html-quiz.png)
+    ![JavaScript](/assets/images/javascript-quiz.png)
 
 - _Score Page_
 
   - The score page tells the user how many questions out of five they got right. This lets the user know how well they did but, does not give away any answers allowing the user to learn.
+    ![Score Page](/assets/images/score-page.png)
 
 - _Reload Button_
 
   - On the bottom of the score page there is a reload button, that will reload the current game from the beginning. This give the user the option to retry and get a higher score than the last game. This promotes a good user experience.
+    ![Reload Button](/assets/images/reload-button.png)
 
 ## Features Left to Implement
 
