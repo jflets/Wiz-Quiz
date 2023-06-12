@@ -145,12 +145,9 @@ Google Dev Tools - To test and trouble shoot features and solve issues withe the
 I used Lighthouse in the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
 
 Index.html
-
-Console Error:
-
-1. script.js:131 Uncaught TypeError: Cannot set properties of null (setting 'innerText'). The error is caused because the element that is trying to be found is located on the game page. This error does not effect the functionality of the site.
-
 ![Index Lighthouse Score](/assets/images/index-lighthouse-test.png)
+
+Game-page.html
 1[Game Page Lighthouse Score](/assets/images/javascript-lighthouse-test.png)
 
 ## Validator Testing
@@ -167,6 +164,12 @@ Console Error:
   - No errors or warnings returned when passing through the official [jshint](https://jshint.com/)
 
 ## Solved Bugs
+
+1. When choosing a quiz the title on the game page would not display the name of the quiz the user had chosen. To fix this I added an if else statement that decides if the user has chosen the javascript quiz else it will will display HTML Quiz.
+
+2. When playing the selected quiz both sets of questions would show, despite the users choice. To fix this i added a localStorage object to the start buttons on th index page. Then create the selectedQuizType variable that determines which set of quiz data to use (quizDataHTML or quizDataJavaScript).
+
+3. When running a lighthouse test on the index.html pager the following error came up in the console, script.js:131 Uncaught TypeError: Cannot set properties of null (setting 'innerText'). The error is caused because the I was trying to load the JavaScript before the element. To fix this i removed the script ath the bottom of the index.html page.
 
 ## Testing User Stories
 
