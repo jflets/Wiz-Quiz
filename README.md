@@ -59,6 +59,7 @@ The wireframe was created for the overall site using [Figma](https://www.figma.c
 - _Favicon_
 
   - The page has a custom favicon. This reassures the user that this is a legitimate site. Promoting a positive user experience.
+
     ![favicon](/assets/images/favicon.png)
 
 - _Landing Page Description_
@@ -94,6 +95,14 @@ The wireframe was created for the overall site using [Figma](https://www.figma.c
     ![Reload Button](/assets/images/reload-button.png)
 
 ## Features Left to Implement
+
+- _More Quizzes_
+
+  - Add more coding quizzes based on other languages to give more verity to the user. This will also allow users to test their knowledge of different coding languages.
+
+- _Quiz Difficulty_
+
+  - Add the option for a user to choose the level of difficulty for the chosen quiz. This will allow a user to improve their skills as they learn more.
 
 # Accessibility
 
