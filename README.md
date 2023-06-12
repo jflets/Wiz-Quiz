@@ -148,7 +148,7 @@ Index.html
 ![Index Lighthouse Score](/assets/images/index-lighthouse-test.png)
 
 Game-page.html
-1[Game Page Lighthouse Score](/assets/images/javascript-lighthouse-test.png)
+![Game Page Lighthouse Score](/assets/images/javascript-lighthouse-test.png)
 
 ## Validator Testing
 
