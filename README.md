@@ -138,7 +138,11 @@ Google Dev Tools - To test and trouble shoot features and solve issues withe the
 
 ## Screen Size Testing
 
+- I used chrome developer tools to make sure that the site was responsive and worked on multiple screen sizes.
+
 ## Lighthouse Testing
+
+I used Lighthouse in the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
 
 ## Validator Testing
 
