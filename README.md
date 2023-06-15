@@ -97,7 +97,7 @@ The wireframe was created for the overall site using [Figma](https://www.figma.c
 - _The Footer_
 
   - The footer section includes social links and another clickable logo. The links will open in a new tab allowing easy navigation. The clickable logo takes the user back up to the landing page section for easy navigation.
-  - The footer is valuable to the user as it encourages them to connect via social media. The footer also allows fast easy navigation back to the landing page section.
+  - The footer is valuable to the user as it encourages them to connect via social media.
     ![Footer](/assets/images/socialmedia-links.png)
 
 ## Features Left to Implement
