@@ -214,10 +214,10 @@ Links:
 # Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
-  - In the GitHub repository, go to the Settings tab.
-  - Scroll down the page to pages, then navigate to the branch dropdown menu.
-  - From the menu select main/master branch.
-  - once selected press save and the page will automatically refresh with a detailed banner om the top to indicate successful deployment.
+- In the GitHub repository, go to the Settings tab.
+- Scroll down the page to pages, then navigate to the branch dropdown menu.
+- From the menu select main/master branch.
+- once selected press save and the page will automatically refresh with a detailed banner om the top to indicate successful deployment.
 
 The live link can be found here - https://jflets.github.io/Wiz-Quiz/
 
@@ -225,4 +225,6 @@ The live link can be found here - https://jflets.github.io/Wiz-Quiz/
 
 ## Content
 
-## Media
+- The modal pop up functionality was taken from [Youtube](https://youtu.be/MBaw_6cPmAw), the code was adjusted and changed to suit my needs.
+- The quizzes on the game page where taken from [Youtube](https://youtu.be/CqddbIrEM5I), the code was adjusted and changed to suit my needs.
+- The social media links in the footer where taken from [Fletfit Project](https://github.com/jflets/FletFit-project-1-).
