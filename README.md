@@ -194,6 +194,23 @@ Game-page.html
 
 ## Full Testing
 
+To fully test the site I carried out the following tests using a multiple browsers (Google Chrome, Safari, Microsoft Edge) and different devices (Mackbook Pro 13 inch, Iphone XS max, Ipad, Window Desktop with 28 inch monitor)
+
+Buttons:
+
+1. Test quiz choice buttons. Both buttons worked as intended, the buttons take the user to the corresponding quiz and only displays the questions for that specific quiz.
+
+2. Test quit button. The quit button performs as intended and when pressed by the user triggers a modal pop up. The user cannot click outside the modal and both the buttons in the modal work.
+
+- The yes button, takes the user back to the main index page.
+- The no button closes the modal.
+
+3. Test the reload button. The button works as intended and resets the quiz back to 0 score and starts the quiz over for the user.
+
+Links:
+
+1. Test social media links. The social media links work as intended and opens up a new page in the browser and takes the user to Facebook or Instagram.
+
 # Deployment
 
 # Credits
