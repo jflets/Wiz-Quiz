@@ -315,22 +315,23 @@ footer a:hover {
   }
   #game-page-wrapper {
     max-width: 80%;
-    max-height: 45%;
+    max-height: fit-content;
+    height: fit-content;
   }
   #game-page-wrapper h3 {
-    font-size: 70px;
+    font-size: 60px;
   }
   #game-page-wrapper h4 {
-    font-size: 60px;
+    font-size: 50px;
   }
   .answer-buttons {
-    font-size: 50px;
+    font-size: 40px;
   }
   #question {
-    font-size: 50px;
+    font-size: 40px;
   }
   #submit {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 /* Media Query for medium screen Sizes */
