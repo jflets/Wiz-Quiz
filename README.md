@@ -24,13 +24,13 @@ By participating in the quizzes, users can test their knowledge and understandin
 
 ## User Stories
 
-1. As a coding novice, I want to practice my HTML and JavaScript skills in a fun and interactive way, so I can improve my understanding of these programming languages.
+1. As a first-time visitor, I want to easily understand what Wizquiz offers, so that I can improve my coding skills.
 
-2. As a beginner in web development, I want to track my progress and see my improvement over time as I engage with the HTML and JavaScript quizzes, so I can build my confidence in coding.
+2. As a client, I want to access the Wizquiz website on any device and have a consistent user experience.
 
-3. As a student studying programming, I want to have access to a platform that offers code-based quizzes specifically for HTML and JavaScript, so I can supplement my learning and reinforce the concepts I've been taught.
+3. As a returning visitor, I want to do different quizzes based on different coding languages.
 
-4. As a coding hobbyist, I want to join an online community of like-minded individuals who are passionate about HTML and JavaScript, so I can engage in discussions, share knowledge, and challenge myself through friendly competition.
+4. As a first-time visitor, I want to be able to find the social links for Wizquiz easily.
 
 # Design
 
@@ -93,6 +93,12 @@ The wireframe was created for the overall site using [Figma](https://www.figma.c
 
   - On the bottom of the score page there is a reload button, that will reload the current game from the beginning. This give the user the option to retry and get a higher score than the last game. This promotes a good user experience.
     ![Reload Button](/assets/images/reload-button.png)
+
+- _The Footer_
+
+  - The footer section includes social links and another clickable logo. The links will open in a new tab allowing easy navigation. The clickable logo takes the user back up to the landing page section for easy navigation.
+  - The footer is valuable to the user as it encourages them to connect via social media. The footer also allows fast easy navigation back to the landing page section.
+    ![Footer](/assets/images/socialmedia-links.png)
 
 ## Features Left to Implement
 
@@ -172,6 +178,19 @@ Game-page.html
 3. When running a lighthouse test on the index.html pager the following error came up in the console, script.js:131 Uncaught TypeError: Cannot set properties of null (setting 'innerText'). The error is caused because the I was trying to load the JavaScript before the element. To fix this i removed the script ath the bottom of the index.html page.
 
 ## Testing User Stories
+
+1. As a first-time visitor, I want to easily understand what Wizquiz offers, so that I can improve my coding skills.
+   ![Landing page text](/assets/images/landing-page-text.png)
+
+2. As a client, I want to access the Wizquiz website on any device and have a consistent user experience.
+   ![Responsive Mockup](/assets/images/responsive-mocup.png)
+
+3. As a returning visitor, I want to do different quizzes based on different coding languages.
+   ![HTML Quiz](/assets/images/html-quiz.png)
+   ![JavaScript](/assets/images/javascript-quiz.png)
+
+4. As a first-time visitor, I want to be able to find the social links for Wizquiz easily.
+   ![Footer](/assets/images/socialmedia-links.png)
 
 ## Full Testing
 
