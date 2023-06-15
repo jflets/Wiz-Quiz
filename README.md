@@ -213,6 +213,14 @@ Links:
 
 # Deployment
 
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, go to the Settings tab.
+  - Scroll down the page to pages, then navigate to the branch dropdown menu.
+  - From the menu select main/master branch.
+  - once selected press save and the page will automatically refresh with a detailed banner om the top to indicate successful deployment.
+
+The live link can be found here - https://jflets.github.io/Wiz-Quiz/
+
 # Credits
 
 ## Content
