@@ -1,4 +1,4 @@
-// Modal code
+// Modal code, this code taken from a youtube video linked in the README file
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");
