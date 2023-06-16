@@ -310,6 +310,9 @@ footer a:hover {
 }
 /* Media Query for larger screens */
 @media (min-width: 1500px) {
+  #main-game-section {
+    height: 110vh;
+  }
   #quit-button {
     font-size: 40px;
   }
@@ -319,25 +322,28 @@ footer a:hover {
     height: fit-content;
   }
   #game-page-wrapper h3 {
-    font-size: 60px;
+    font-size: 55px;
   }
   #game-page-wrapper h4 {
-    font-size: 50px;
+    font-size: 45px;
   }
   .answer-buttons {
-    font-size: 40px;
+    font-size: 35px;
   }
   #question {
-    font-size: 40px;
+    font-size: 35px;
   }
   #submit {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 /* Media Query for medium screen Sizes */
 @media (max-width: 1023px) {
+  #main-game-section {
+    height: 110vh;
+  }
   #game-page-wrapper {
-    max-width: 80%;
+    max-width: 90%;
   }
   #game-page-wrapper h3 {
     font-size: 35px;
@@ -348,6 +354,9 @@ footer a:hover {
 }
 /* Media Query for Tablet Device Sizes */
 @media (max-width: 767px) {
+  #main-game-section {
+    height: 110vh;
+  }
   #main-wrapper {
     height: auto;
     max-height: none;
@@ -405,6 +414,9 @@ footer a:hover {
 }
 /* Media Query for screens up to 480px wide */
 @media screen and (max-width: 480px) {
+  #main-game-section {
+    height: 110vh;
+  }
   .logo {
     font-size: 25px;
     padding: 5px 0 5px 10px;
@@ -443,6 +455,10 @@ footer a:hover {
   }
   #submit {
     font-size: 20px;
+  }
+  #submit:hover {
+    cursor: none;
+    text-decoration: none;
   }
   #reload {
     font-size: 20px;
