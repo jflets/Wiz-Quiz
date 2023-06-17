@@ -139,6 +139,7 @@ function loadQuiz() {
     showFinalScore();
     return;
   }
+  deselectAnswer();
   const currentQuestion = currentQuizData[currentQuiz];
   questionEls.innerText = currentQuestion.question;
   a_text.innerText = currentQuestion.a;
