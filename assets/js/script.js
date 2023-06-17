@@ -166,7 +166,11 @@ function showFinalScore() {
 }
 submitBtn.addEventListener("click", () => {
   const answer = getSelected();
-  if (answer) {
+  if (!answer) {
+    alert("Please select an answer before submitting.");
+    return;
+  }
+  {
     if (answer === currentQuizData[currentQuiz].correct) {
       score++;
     }
