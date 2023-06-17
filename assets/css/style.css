@@ -230,6 +230,7 @@ footer a:hover {
   border-radius: 10px;
   box-sizing: border-box;
   margin-bottom: 1em;
+  color: black;
 }
 #reload:hover {
   background-color: green;
