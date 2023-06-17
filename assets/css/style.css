@@ -455,12 +455,10 @@ footer a:hover {
   }
   #submit {
     font-size: 20px;
-  }
-  #submit:hover {
-    cursor: none;
-    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
   }
   #reload {
     font-size: 20px;
+    -webkit-tap-highlight-color: transparent;
   }
 }
