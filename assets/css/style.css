@@ -208,6 +208,7 @@ footer a:hover {
   box-sizing: border-box;
   margin-bottom: 1em;
   overflow: hidden;
+  color: black;
 }
 #submit:hover {
   background-color: green;
