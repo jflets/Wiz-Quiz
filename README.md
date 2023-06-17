@@ -156,6 +156,11 @@ Index.html
 Game-page.html
 ![Game Page Lighthouse Score](/assets/images/javascript-lighthouse-test.png)
 
+Mobile test
+![Mobile Test](/assets/images/mobile-lighthouse-test.png)
+
+In the mobile test the accessibility is reduced due to not having enough contrast. I do not feel that this is an issue as the colors used have high contrast and the site is easily readable.
+
 ## Validator Testing
 
 - _HTML_
