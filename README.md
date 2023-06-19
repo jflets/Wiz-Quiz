@@ -1,14 +1,14 @@
 # Wiz-Quiz
 
-Welcome to WixQuiz, where coding meets excitement! Immerse yourself in our HTML and JavaScript quizzes, featuring five mind-boggling questions each. Put your coding skills to the test and aim for a top score as you explore the intricacies of HTML or dive into the world of JavaScript. Challenge yourself, expand your coding prowess, and embark on an exhilarating quest for knowledge. Whether you're a coding novice or an experienced developer, WixQuiz offers an engaging platform to enhance your HTML and JavaScript expertise. Join us now and experience the thrill of code-based quizzes at WixQuiz!
+Welcome to WizQuiz, where coding meets excitement! Immerse yourself in our HTML and JavaScript quizzes, featuring five mind-boggling questions each. Put your coding skills to the test and aim for a top score as you explore the intricacies of HTML or dive into the world of JavaScript. Challenge yourself, expand your coding prowess, and embark on an exhilarating quest for knowledge. Whether you're a coding novice or an experienced developer, WizQuiz offers an engaging platform to enhance your HTML and JavaScript expertise. Join us now and experience the thrill of code-based quizzes at WizQuiz!
 
 ![Responsive Mockup](/assets/images/responsive-mocup.png)
 
 # User Experience (UX)
 
-WixQuiz offers immense value to users by providing a platform where they can enhance their coding skills, specifically in HTML and JavaScript.
+WizQuiz offers immense value to users by providing a platform where they can enhance their coding skills, specifically in HTML and JavaScript.
 
-By participating in the quizzes, users can test their knowledge and understanding of these programming languages in a fun and interactive way. The quizzes consist of questions that challenge users to think critically and apply their coding expertise. Through this process, users can identify areas for improvement and further expand their coding prowess. WixQuiz enables users to track their progress, strive for higher scores, and ultimately gain confidence in their coding abilities. Whether users are beginners seeking to learn or experienced developers aiming to sharpen their skills, WixQuiz delivers value by facilitating an engaging and educational coding experience.
+By participating in the quizzes, users can test their knowledge and understanding of these programming languages in a fun and interactive way. The quizzes consist of questions that challenge users to think critically and apply their coding expertise. Through this process, users can identify areas for improvement and further expand their coding prowess. WizQuiz enables users to track their progress, strive for higher scores, and ultimately gain confidence in their coding abilities. Whether users are beginners seeking to learn or experienced developers aiming to sharpen their skills, WizQuiz delivers value by facilitating an engaging and educational coding experience.
 
 ## Key Points
 
