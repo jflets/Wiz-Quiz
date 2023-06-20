@@ -1,3 +1,4 @@
+// Player name input check
 const playerNameInput = document.getElementById('player-name');
 const startButtons = document.querySelectorAll('.start-button a');
 
