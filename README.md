@@ -67,6 +67,10 @@ The wireframe was created for the overall site using [Figma](https://www.figma.c
   - The landing page there is a description of what the site offers and how the games work. This provides the user with an understanding on how the site works. This will result in the a positive user experience.
     ![Landing page text](/assets/images/landing-page-text.png)
 
+- _Player Name_
+
+-
+
 - _Quiz Choice Buttons_
 
   - The main page includes two quiz choice buttons. This allows the user to decide what quiz the would like to take.
