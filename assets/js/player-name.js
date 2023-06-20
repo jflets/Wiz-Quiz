@@ -1,21 +1,16 @@
-const playerNameInput = document.getElementById("player-name");
-const startBtns = document.querySelectorAll(".start-button a");
-const titleEl = document.querySelector("h1.logo");
+const playerNameInput = document.getElementById('player-name');
+const startButtons = document.querySelectorAll('.start-button a');
 
-startBtns.forEach((startBtn) => {
-  startBtn.addEventListener("click", (event) => {
-    event.preventDefault();
-    // Check if player name is entered
-    const playerName = playerNameInput.value.trim();
-    if (playerName === "") {
-      alert("Please enter your name before starting the quiz.");
-      return;
+startButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    if (playerNameInput.value.trim() === '') {
+      event.preventDefault();
+      alert('Please enter your name before starting the quiz');
+    } else {
+      const selectedQuiz = button.getAttribute('onclick').includes('html')
+        ? 'html-quiz.html'
+        : 'javascript-quiz.html';
+      window.location.href = selectedQuiz;
     }
-
-    const selectedQuiz = startBtn.dataset.quizType;
-
-    sessionStorage.setItem("selectedQuiz", selectedQuiz);
-    sessionStorage.setItem("playerName", playerName);
-    window.location.href = startBtn.href;
   });
 });
