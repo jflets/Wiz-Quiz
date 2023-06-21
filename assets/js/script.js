@@ -199,6 +199,22 @@ const quizDataJavaScript = [
   }
 ];
 
+// Function to shuffle an array
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+// Function to show only 5 questions
+function showLimitedQuestions(quizData) {
+  shuffleArray(quizData);
+  return quizData.slice(0, 5);
+}
+
+const limitedQuizDataHTML = showLimitedQuestions(quizDataHTML);
+const limitedQuizDataJavaScript = showLimitedQuestions(quizDataJavaScript);
 const quiz = document.getElementById("game-page-wrapper");
 const answerEls = document.querySelectorAll(".answer-buttons input");
 const questionEls = document.getElementById("question");
@@ -221,14 +237,15 @@ if (playerName) {
 }
 
 if (selectedQuiz === "javascript") {
-  currentQuizData = quizDataJavaScript;
+  currentQuizData = limitedQuizDataJavaScript;
   titleEl.innerText = "JavaScript Quiz";
 } else {
-  currentQuizData = quizDataHTML;
+  currentQuizData = limitedQuizDataHTML;
   titleEl.innerText = "HTML Quiz";
 }
 
 loadQuiz();
+
 function loadQuiz() {
   if (currentQuiz >= currentQuizData.length) {
     showFinalScore();
@@ -258,9 +275,10 @@ function getSelected() {
   });
   return answer;
 }
+
 // Reload button and score
 function showFinalScore() {
-  quiz.innerHTML = `<h4>Hi ${playerName} you answered ${score}/${currentQuizData.length} questions correctly</h4><button id="reload" onclick="location.reload()">Reload</button>`;
+  quiz.innerHTML = `<h4>Hi ${playerName}, you answered ${score}/${currentQuizData.length} questions correctly</h4><button id="reload" onclick="location.reload()">Reload</button>`;
 }
 
 submitBtn.addEventListener("click", () => {
@@ -269,11 +287,11 @@ submitBtn.addEventListener("click", () => {
     alert("Please select an answer before submitting.");
     return;
   }
-  {
-    if (answer === currentQuizData[currentQuiz].correct) {
-      score++;
-    }
-    currentQuiz++;
-    loadQuiz();
+  
+  if (answer === currentQuizData[currentQuiz].correct) {
+    score++;
   }
+  
+  currentQuiz++;
+  loadQuiz();
 });
