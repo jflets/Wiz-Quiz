@@ -138,8 +138,10 @@ footer a:hover {
   height: 100vh;
 }
 #name-of-player {
-  font-size: 20px;
-  color: #fffcfa;
+  font-size: 40px;
+  -webkit-text-fill-color: #fffcfa;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.5px;
 }
 #quit-button {
   width: fit-content;
