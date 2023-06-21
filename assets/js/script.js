@@ -128,7 +128,7 @@ const c_text = document.getElementById("c-btn");
 const d_text = document.getElementById("d-btn");
 const submitBtn = document.getElementById("submit");
 const titleEl = document.getElementById("quiz-title");
-const playerName = sessionStorage.getItem('playerName');
+const playerName = sessionStorage.getItem("playerName");
 
 let currentQuiz = 0;
 let score = 0;
@@ -136,7 +136,7 @@ let selectedQuiz = sessionStorage.getItem("selectedQuiz");
 let currentQuizData;
 
 if (playerName) {
-  const nameOfPlayerElement = document.getElementById('name-of-player');
+  const nameOfPlayerElement = document.getElementById("name-of-player");
   nameOfPlayerElement.textContent = playerName;
 }
 
