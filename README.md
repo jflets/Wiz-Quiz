@@ -1,4 +1,4 @@
-# Wiz-Quiz
+# WizQuiz
 
 Welcome to WizQuiz, where coding meets excitement! Immerse yourself in our HTML and JavaScript quizzes, featuring five mind-boggling questions each. Put your coding skills to the test and aim for a top score as you explore the intricacies of HTML or dive into the world of JavaScript. Challenge yourself, expand your coding prowess, and embark on an exhilarating quest for knowledge. Whether you're a coding novice or an experienced developer, WizQuiz offers an engaging platform to enhance your HTML and JavaScript expertise. Join us now and experience the thrill of code-based quizzes at WizQuiz!
 
@@ -194,7 +194,7 @@ In the mobile test the accessibility is reduced due to not having enough contras
    ![Landing page text](/assets/images/landing-page-text.png)
 
 2. As a client, I want to access the Wizquiz website on any device and have a consistent user experience.
-   ![Responsive Mockup](/assets/images/responsive-mocup.png)
+   ![Responsive Mockup](/assets/images/responsive-mockup.png)
 
 3. As a returning visitor, I want to do different quizzes based on different coding languages.
    ![HTML Quiz](/assets/images/html-quiz.png)
@@ -205,7 +205,7 @@ In the mobile test the accessibility is reduced due to not having enough contras
 
 ## Full Testing
 
-To fully test the site I carried out the following tests using a multiple browsers (Google Chrome, Safari, Microsoft Edge) and different devices (Mackbook Pro 13 inch, Iphone XS max, Ipad, Window Desktop with 28 inch monitor)
+To fully test the site I carried out the following tests using a multiple browsers (Google Chrome, Safari, Microsoft Edge) and different devices (Macbook Pro 13 inch, Iphone XS max, Ipad, Window Desktop with 28 inch monitor)
 
 Buttons:
 
