@@ -2,7 +2,7 @@
 
 Welcome to WizQuiz, where coding meets excitement! Immerse yourself in our HTML and JavaScript quizzes, featuring five mind-boggling questions each. Put your coding skills to the test and aim for a top score as you explore the intricacies of HTML or dive into the world of JavaScript. Challenge yourself, expand your coding prowess, and embark on an exhilarating quest for knowledge. Whether you're a coding novice or an experienced developer, WizQuiz offers an engaging platform to enhance your HTML and JavaScript expertise. Join us now and experience the thrill of code-based quizzes at WizQuiz!
 
-![Responsive Mockup](/assets/images/responsive-mocup.png)
+![Responsive Mockup](/assets/images/responsive-mockup.png)
 
 # User Experience (UX)
 
