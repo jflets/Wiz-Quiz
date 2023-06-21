@@ -212,20 +212,18 @@ In the mobile test the accessibility is reduced due to not having enough contras
 
 To fully test the site I carried out the following tests using a multiple browsers (Google Chrome, Safari, Microsoft Edge) and different devices (Macbook Pro 13 inch, Iphone XS max, Ipad, Window Desktop with 28 inch monitor)
 
-Buttons:
-
-1. Test quiz choice buttons. Both buttons worked as intended, the buttons take the user to the corresponding quiz and only displays the questions for that specific quiz.
-
-2. Test quit button. The quit button performs as intended and when pressed by the user triggers a modal pop up. The user cannot click outside the modal and both the buttons in the modal work.
-
-- The yes button, takes the user back to the main index page.
-- The no button closes the modal.
-
-3. Test the reload button. The button works as intended and resets the quiz back to 0 score and starts the quiz over for the user.
-
-Links:
-
-1. Test social media links. The social media links work as intended and opens up a new page in the browser and takes the user to Facebook or Instagram.
+| Feature                                     | Expected Outcome                                                                                | Testing Performed | Result                                                              | Pass/Fail |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------- | --------- |
+| Player name input                           | Allow user to enter a player name                                                               | Type player name  | User can type a player name                                         | Pass      |
+| Quiz choice buttons, no player name entered | If the user has not entered a player name and alert will show and the quiz will not start       | Click on button   | User is prompted to enter player name and quiz does not start       | Pass      |
+| Quiz choice buttons                         | Take the user to the corresponding quiz and only displays the questions for that specific quiz. | Click on button   | User is taken to corresponding quiz                                 | Pass      |
+| Quit button                                 | Triggers a modal pop up. The user cannot click outside the modal                                | Clicked button    | Modal pops up and user cannot click outside modal                   | Pass      |
+| Modal yes button                            | Takes user back to landing page                                                                 | Click button      | User is taken back to landing page                                  | Pass      |
+| Modal no button                             | Closes modal                                                                                    | Click button      | Modal closes                                                        | Pass      |
+| Quiz answer buttons                         | User can only select one answer                                                                 | Click answer      | Only one answer can be selected                                     | Pass      |
+| Submit button                               | Submits user answer and moves to next question                                                  | Click button      | User is taken to next question                                      | Pass      |
+| Reload button                               | Reloads the quiz with a different random set of questions                                       | Click button      | Quiz is restarted and a different set of random questions is loaded |
+| Social media icon link                      | Opens a separate tab and loads social media page                                                | Click icon        | Opens social media page in new tab                                  | Pass      |
 
 # Deployment
 
