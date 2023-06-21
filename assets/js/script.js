@@ -128,11 +128,17 @@ const c_text = document.getElementById("c-btn");
 const d_text = document.getElementById("d-btn");
 const submitBtn = document.getElementById("submit");
 const titleEl = document.getElementById("quiz-title");
+const playerName = sessionStorage.getItem('playerName');
 
 let currentQuiz = 0;
 let score = 0;
 let selectedQuiz = sessionStorage.getItem("selectedQuiz");
 let currentQuizData;
+
+if (playerName) {
+  const nameOfPlayerElement = document.getElementById('name-of-player');
+  nameOfPlayerElement.textContent = playerName;
+}
 
 if (selectedQuiz === "javascript") {
   currentQuizData = quizDataJavaScript;
@@ -174,7 +180,7 @@ function getSelected() {
 }
 // Reload button and score
 function showFinalScore() {
-  quiz.innerHTML = `<h4>You answered ${score}/${currentQuizData.length} questions correctly</h4><button id="reload" onclick="location.reload()">Reload</button>`;
+  quiz.innerHTML = `<h4>Hi ${playerName} you answered ${score}/${currentQuizData.length} questions correctly</h4><button id="reload" onclick="location.reload()">Reload</button>`;
 }
 
 submitBtn.addEventListener("click", () => {
