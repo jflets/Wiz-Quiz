@@ -106,6 +106,11 @@ The wireframe was created for the overall site using [Figma](https://www.figma.c
   - The footer is valuable to the user as it encourages them to connect via social media.
     ![Footer](/assets/images/socialmedia-links.png)
 
+- _Error 404 Page_
+
+  - The site includes a dedicated Error 404 page, that will redirect a user back to the landing page after 10 seconds. This makes sure the user does not get lost and creates a good user experience.
+    ![Error 404](/assets/images/404-page.png)
+
 ## Features Left to Implement
 
 - _More Quizzes_
