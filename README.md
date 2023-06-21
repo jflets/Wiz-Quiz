@@ -92,6 +92,7 @@ The wireframe was created for the overall site using [Figma](https://www.figma.c
 - _Score Page_
 
   - The score page tells the user how many questions out of five they got right. This lets the user know how well they did but, does not give away any answers allowing the user to learn.
+  - The score page also starts with the users inputted name. This creates a more personalized user experience.
     ![Score Page](/assets/images/score-page.png)
 
 - _Reload Button_
