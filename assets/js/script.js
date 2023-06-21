@@ -72,6 +72,46 @@ const quizDataHTML = [
     d: "<newline>",
     correct: "a",
   },
+  {
+    question: "What is the purpose of the <head> tag in an HTML document?",
+    a: "To define the main content of the page",
+    b: "To specify the title and metadata of the page",
+    c: "To display a header section at the top of the page",
+    d: "To create a hyperlink to another webpage",
+    correct: "b",
+  },
+  {
+    question: "Which HTML tag is used to display an image on a webpage?",
+    a: "<img>",
+    b: "<picture>",
+    c: "<image>",
+    d: "<photo>",
+    correct: "a",
+  },
+  {
+    question: "What is the purpose of the alt attribute in an <img> tag?",
+    a: "To specify the alignment of the image",
+    b: "To define the alternative text for the image",
+    c: "To set the background color behind the image",
+    d: "To add a border around the image",
+    correct: "b",
+  },
+  {
+    question: "Which HTML element is used to create a numbered list?",
+    a: "<ul>",
+    b: "<ol>",
+    c: "<li>",
+    d: "<dl>",
+    correct: "b",
+  },
+  {
+    question: "What is the purpose of the <form> tag in HTML?",
+    a: "To define a section of the page",
+    b: "To create a table",
+    c: "To specify the font style",
+    d: "To create an interactive input form",
+    correct: "d",
+  }
 ];
 
 const quizDataJavaScript = [
