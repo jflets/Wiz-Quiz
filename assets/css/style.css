@@ -475,6 +475,9 @@ footer a:hover {
     margin-left: 0.1em;
     margin-right: 0.1em;
   }
+  #name-of-player {
+    font-size: 20px;
+  }
   #game-page-wrapper {
     width: 95vw;
   }
