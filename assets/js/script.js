@@ -157,6 +157,46 @@ const quizDataJavaScript = [
     d: "'number'",
     correct: "a",
   },
+  {
+    question: "What is the difference between 'null' and 'undefined' in JavaScript?",
+    a: "'null' is an empty value, while 'undefined' means a variable has been declared but not assigned a value.",
+    b: "'null' and 'undefined' are interchangeable and can be used interchangeably.",
+    c: "'null' and 'undefined' both represent the absence of a value in JavaScript.",
+    d: "'null' is used to terminate a loop, while 'undefined' is used to define a function.",
+    correct: "a",
+  },
+  {
+    question: "Which operator is used to check if two values are equal in JavaScript?",
+    a: "==",
+    b: "===",
+    c: "!=",
+    d: "!==",
+    correct: "b",
+  },
+  {
+    question: "What is the purpose of the 'this' keyword in JavaScript?",
+    a: "To refer to the current HTML document",
+    b: "To declare a new variable",
+    c: "To refer to the current object or context",
+    d: "To define a function",
+    correct: "c",
+  },
+  {
+    question: "What is the result of the following expression? NaN === NaN;",
+    a: "true",
+    b: "false",
+    c: "undefined",
+    d: "NaN",
+    correct: "b",
+  },
+  {
+    question: "What does the 'typeof' operator return for an array?",
+    a: "'array'",
+    b: "'object'",
+    c: "'array'",
+    d: "'undefined'",
+    correct: "b",
+  }
 ];
 
 const quiz = document.getElementById("game-page-wrapper");
