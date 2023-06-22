@@ -50,9 +50,15 @@ Google Fonts was used for the following fonts:
 
 The wireframe was created for the overall site using [Figma](https://www.figma.com)
 
-![Wireframe](/assets/images/main-page-wireframe.png)
+![Wireframe](/assets/images/index-page-wireframe.png)
 ![Wireframe](/assets/images/game-page-wireframe.png)
 ![Wireframe](/assets/images/score-page-wireframe.png)
+
+# Mobile Wireframe
+
+![Wireframe](/assets/images/mobile-index-page-wireframe.png)
+![Wireframe](/assets/images/mobile-game-page-wireframe.png)
+![Wireframe](/assets/images/mobile-score-page-wireframe.png)
 
 # Features
 
