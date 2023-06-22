@@ -73,10 +73,15 @@ The wireframe was created for the overall site using [Figma](https://www.figma.c
   - On the landing page there is a description of what the site offers and how the games work. This provides the user with an understanding on how the site works. This will result in the a positive user experience.
     ![Landing page text](/assets/images/landing-page-text.png)
 
-- _Player Name_
+- _Player Name Input_
 
 - The landing page includes a player name input that allows the player to add their name before they can start a quiz. The user must input their name to start a quiz, this makes sure that their nam is displayed throughout the game page. This creates a more personalized user experience.
   ![Player Name](/assets/images/player-name.png)
+
+- _Player Name Display_
+
+- On the game page, the name input by the player will be displayed at the top of the page. This gives the player a more personalized user experience.
+  ![Player Name Display](/assets/images/player-name-game-page-screenshot.png)
 
 - _Quiz Choice Buttons_
 
