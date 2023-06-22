@@ -178,6 +178,9 @@ Index.html
 Game-page.html
 ![Game Page Lighthouse Score](/assets/images/game-page-lighthouse-test.png)
 
+404.html
+![Error 404 Page](/assets/images/404-page-lighthouse-test.png)
+
 Mobile test
 ![Mobile Test](/assets/images/mobile-lighthouse-test.png)
 
