@@ -36,7 +36,7 @@ By participating in the quizzes, users can test their knowledge and understandin
 
 ## Color Scheme
 
-![Color Pallet](/assets/images/coolors.png)
+![Color Pallet](/assets/images/new-coolors.png)
 
 The website uses a simple color pallet with high contrasting colors. The color pallet was created using the [Coolors](https://coolors.co) website.
 
