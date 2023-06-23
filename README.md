@@ -250,6 +250,24 @@ To fully test the site I carried out the following tests using a multiple browse
 
 The live link can be found here - https://jflets.github.io/Wiz-Quiz/
 
+## Local Development
+
+How to Fork
+To fork the repository:
+
+- Log in (or sign up) to Github.
+- Go to the repository for this project, [WizQuiz](https://github.com/jflets/Wiz-Quiz)
+- Click the Fork button in the top right corner.
+- How to Clone
+
+To clone the repository:
+
+- Log in (or sign up) to GitHub.
+- Go to the repository for this project, [WizQuiz](https://github.com/jflets/Wiz-Quiz)
+- Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+- Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+- Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
 # Credits
 
 ## Content
