@@ -193,7 +193,7 @@ const quizDataJavaScript = [
     question: "What does the 'typeof' operator return for an array?",
     a: "'array'",
     b: "'object'",
-    c: "'array'",
+    c: "'string'",
     d: "'undefined'",
     correct: "b",
   }
