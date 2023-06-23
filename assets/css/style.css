@@ -482,6 +482,9 @@ footer a:hover {
 }
 /* Media Query for screens up to 480px wide */
 @media screen and (max-width: 480px) {
+  #main-wrapper {
+    margin: 0 0.5em 0 0.5em;
+  }
   #main-game-section {
     height: 110vh;
   }
